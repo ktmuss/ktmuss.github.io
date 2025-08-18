@@ -15,13 +15,29 @@
 
     <section class="card">
       <h2 class="h2">Narrative</h2>
-      <p><em>Paste your Milestone 3 narrative here.</em></p>
-      <ul>
-        <li>Refactor to RecyclerView; Adapter & ViewHolder patterns.</li>
-        <li>Data flow: SQLite → Cursor → List&lt;Event&gt; → Adapter → RecyclerView.</li>
-        <li>Performance/memory benefits; modular event handlers.</li>
-        <li>Reflection and outcomes.</li>
-      </ul>
+      <p>The artifact that I am enhancing is from my CS-360 class. I have created an Android Event Tracker app. 
+        Originally, it was created to give users the ability to create events and store them locally in a SQlite database. 
+        The events are displayed at the bottom of the screen where you can add new events. Any events that the user creates can
+        be deleted and/or edited. The original app used a TableLayout to dynamically generate and display rows for events.</p>
+
+      <p>I chose this artifact because this was a class I took last term. The memory of this is still fresh and I wanted more experience 
+        with working on apps. The enhancement I have done was refactoring the way the data is being displayed. I took the original TableLayout 
+        and updated it to a RecyclerView. The RecyclerView has an adapter and a ViewHolder pattern. With this enhancement, I am showcasing my ability 
+        to apply abstract data handling principles such as encapsulation, separation of concerns, and efficient memory management to a real-world project. 
+        My enhancement involves a clear data flow like this:</p>
+
+      <p>SQLite Database -> Cursor -> List<Event> -> Adapter -> RecycleView</p>
+
+      <p>This introduces a better separation between data and view layers as well as improving performance and memory usage. With RecyclerView, I have added a 
+        scalable and reusable architecture that is great for handling large datasets without inflating the view hierarchy unnecessarily.</p>
+
+      <p>The outcomes I had planned to meet were outcomes 3 and 4. I have successfully met both. Converting to RecyclerView needed a good understanding of view 
+        recycling logic, array structures, and adapter patterns. I demonstrated Android development practices like using interface driven event handling for modular design. </p>
+
+      <p>Working on this enhancement taught me why it is important to choose the correct data structure as well as the right UI pattern for a given context. Going from TableLayout to 
+        RecyclerView required me to break down the entire data display logic into testable components. A challenge I encountered was setting up the delete and edit functionality through 
+        custom interfaces in the adapter to make sure it stayed coupled with the main activity. </p>
+      
     </section>
 
     <section class="card">
