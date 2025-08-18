@@ -15,13 +15,31 @@
 
     <section class="card">
       <h2 class="h2">Narrative</h2>
-      <p><em>Paste your Milestone 2 narrative here.</em></p>
-      <ul>
-        <li>Briefly describe the artifact and when it was created.</li>
-        <li>Why it is included; specific skills demonstrated.</li>
-        <li>How the enhancement improved the artifact.</li>
-        <li>Reflection: learning, challenges, feedback incorporation; outcomes met.</li>
-      </ul>
+      <p>This artifact is an event tracking app from my CS-360 class. I took this class last term (May-June). It is an app that 
+        gives the users the ability to create events, edit events, and view their created events all on a simple app. The app is written 
+        in Java code. SQLite is used for its storage.</p>
+
+      <p>I chose this artifact because it was the most recent project I have worked on, so all the information is still somewhat fresh. I 
+        also wanted to improve the app as much as I could to get more experience with working on apps. My enhancement for this artifact was 
+        to include an edit event button to give the users the option to edit any events they have listed. I had to add a new UI dialog, add 
+        new event listeners, update the database helper method, and validate input to make sure events could not be updated with invalid or empty data. 
+        The enhancements I have showcased my ability to apply good UX practices by maintaining data that already exists in fields that can be edited, use 
+        modular methods to keep any logic maintainable as well as reusable, and update records in the database securely and use SQLite efficiently.</p>
+
+      <p>The outcomes I would meet with this artifact are outcomes 3, 4, and 5. I believe I was successful in meeting them. With outcome 3, I designed and 
+        evaluated a computing solution by using good algorithmic and software practices. This was done by using clean and efficient logic for editing and updating
+        the records of an event. Outcome 4 was to demonstrate the use of innovative tools and software engineering practices. This was done by improving the UI and 
+        the modularity as well as the scalability of the app. Outcome 5 was more focused on design and user experience. I used practices that had security in mind. Input 
+        validation was used, and I avoided any data manipulation that could compromise or corrupt the database.</p>
+
+      <p>When working on this enhancement, I learned why it is important to have a user focused design, especially with a small feature like an edit button. They require careful 
+        UI decisions, proper input handling, and good feedback for the user. One challenge I encountered was trying to keep the architecture clean while also adding functionality. I 
+        tried to make sure DatabaseHelper class stayed modular and ensure that any new logic would not interfere with my CRUD methods I had already established.</p>
+
+      <p>One other challenge was updating my EventGridActivity class. I tried to update it in a way that would not break my existing event table rendering from previous tests. I integrated 
+        the dialogue box to appear in each row where there was an event. Having the table refresh dynamically needed careful coordination between the UI layers and the database. By testing the 
+        edit button, it also emphasized the value of early validation and exception handling. </p>
+      
     </section>
 
     <section class="card">
